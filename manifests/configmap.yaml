@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ratnaker-contoso-config
+  namespace: sample-app-namespace-1754388435138
+  labels:
+    app.kubernetes.io/name: ratnaker-contoso
+    kubernetes.azure.com/generator: devhub
+data:
