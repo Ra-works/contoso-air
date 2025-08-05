@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: ratnaker-contoso
+  labels:
+    app.kubernetes.io/name: ratnaker-contoso
+    app.kubernetes.io/part-of: ratnaker-contoso-project
+    kubernetes.azure.com/generator: devhub
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: ratnaker-contoso
